@@ -1,1 +1,1 @@
-<h1>The average user drinks <%= @average %> cups of coffee a day.</h1>
+<h1>The average user drinks <%= @average.nil? ? 0 : @average   %> cups of coffee a day.</h1>
