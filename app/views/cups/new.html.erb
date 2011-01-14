@@ -1,0 +1,5 @@
+<h1>How many cups of coffee did you have today?</h1>
+ <% form_for @cups, :url => { :action => :create } do |f| %>
+	<%= f.text_field :number %>
+	<%= f.submit "Submit" %>
+	<% end %>
