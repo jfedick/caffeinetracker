@@ -1,1 +1,5 @@
-<h1>The average user drinks <%= @average.nil? ? 0 : @average   %> cups of coffee a day.</h1>
+<h2>Caffeine Tracker Results:</h2>
+<br />
+<br />
+<%= render :partial => 'graph', :locals => {:average => @average, :your_cups => @your_cups } %> 
+<br />

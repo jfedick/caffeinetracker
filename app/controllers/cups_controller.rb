@@ -17,6 +17,7 @@ class CupsController < ApplicationController
   def index
     @cups = Cups.all
     @average = Cups.average('number')
+    @your_cups = Cups.last.number
   end
 
 end

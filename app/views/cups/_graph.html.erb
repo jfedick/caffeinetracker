@@ -1,0 +1,54 @@
+<script type="text/javascript+protovis">
+
+    var data = [3.2, <%= your_cups %>, <%= average %>];
+
+/* Sizing and scales. */
+var w = 400,
+    h = 250,
+    x = pv.Scale.linear(0, 20).range(0, w),
+    y = pv.Scale.ordinal(pv.range(3)).splitBanded(0, h, 4/5),
+    labels = ["Your Cups", "National Average", "User Average"];
+
+/* The root panel. */
+var vis = new pv.Panel()
+    .width(w)
+    .height(h)
+    .bottom(20)
+    .left(100)
+    .right(10)
+    .top(5);
+
+/* The bars. */
+var bar = vis.add(pv.Bar)
+    .data(data)
+    .top(function() y(this.index))
+    .height(y.range().band)
+    .left(0)
+    .width(x);
+
+/* The value label. */
+bar.anchor("right").add(pv.Label)
+    .textStyle("white")
+    .text(function(d) d.toFixed(1));
+
+/* The variable label. */
+bar.anchor("left").add(pv.Label)
+    .textMargin(5)
+    .textAlign("right")
+    .text(function() labels[this.index]);
+
+/* X-axis ticks. */
+vis.add(pv.Rule)
+    .data(x.ticks(5))
+    .left(x)
+    .strokeStyle(function(d) d ? "rgba(255,255,255,.3)" : "#000")
+  .add(pv.Rule)
+    .bottom(0)
+    .height(5)
+    .strokeStyle("#000")
+  .anchor("bottom").add(pv.Label)
+    .text(x.tickFormat);
+
+vis.render();
+
+    </script>
