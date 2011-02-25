@@ -7,7 +7,7 @@ var w = 400,
     h = 250,
     x = pv.Scale.linear(0, 20).range(0, w),
     y = pv.Scale.ordinal(pv.range(3)).splitBanded(0, h, 4/5),
-    labels = ["Your Cups", "National Average", "User Average"];
+    labels = ["National Average", "Your Cups", "User Average"];
 
 /* The root panel. */
 var vis = new pv.Panel()
