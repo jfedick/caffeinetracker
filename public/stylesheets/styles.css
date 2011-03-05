@@ -34,13 +34,13 @@ body {
 }
 h1 {
 	text-align: right;
-	margin-top: 150px;
-	margin-right: 130px;
+	margin-top: 200px;
+	margin-right: 280px;
 	font-family: "fertigo-pro-1","fertigo-pro-2";
 }
 #results_text {
 	text-align: right;
-	margin-top: 150px;
+	margin-top: 180px;
 	margin-right: 100px;
 	font-family: "fertigo-pro-1","fertigo-pro-2";
 }
