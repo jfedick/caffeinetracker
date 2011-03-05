@@ -1,2 +1,24 @@
-h2 { text-align:center;}
-body {width:550px; padding: 20px;}
+html {
+	background: url(/images/bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+body {
+	font-family: "fertigo-pro-1","fertigo-pro-2";
+}
+#container {
+	background-color: rgba(255, 255, 255, 0.4);
+	-webkit-border-radius: 20px;
+	position: absolute;
+	height: 100px;
+	top: 10%;
+	left: 50%;
+	right: 5%;
+	margin-top: 100px;
+	padding: 30px;
+}
+h1 {
+	font-family: "fertigo-pro-1","fertigo-pro-2";
+}
