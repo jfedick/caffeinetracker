@@ -25,7 +25,7 @@ body {
 	-webkit-border-radius: 20px;
 	position: absolute;
 	height: 280px;
-	width: 540px;
+	width: 735px;
 	top: 25%;
 	left: 50%;
 	right: 5%;
@@ -40,7 +40,7 @@ h1 {
 }
 #results_text {
 	text-align: right;
-	margin-top: 180px;
+	margin-top: 200px;
 	margin-right: 100px;
 	font-family: "fertigo-pro-1","fertigo-pro-2";
 }
