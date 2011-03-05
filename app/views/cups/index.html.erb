@@ -1,5 +1,8 @@
-<h2>Caffeine Tracker Results:</h2>
+<div id="results_text">
+<h1><font size=60px>Results</font></h1>
+</div>
 <br />
 <br />
+<div id="graph_display">
 <%= render :partial => 'graph', :locals => {:average => @average, :your_cups => @your_cups } %> 
-<br />
+</div>

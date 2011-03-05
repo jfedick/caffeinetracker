@@ -9,16 +9,38 @@ body {
 	font-family: "fertigo-pro-1","fertigo-pro-2";
 }
 #container {
-	background-color: rgba(255, 255, 255, 0.4);
+	background-color: rgba(255, 255, 255, 0.3);
 	-webkit-border-radius: 20px;
 	position: absolute;
-	height: 100px;
-	top: 10%;
+	height: 150px;
+	top: 25%;
 	left: 50%;
 	right: 5%;
 	margin-top: 100px;
-	padding: 30px;
+	padding: 10px;
+	text-align: center;
+}
+#graph_display {
+	background-color: rgba(255, 255, 255, 0.3);
+	-webkit-border-radius: 20px;
+	position: absolute;
+	height: 280px;
+	width: 540px;
+	top: 25%;
+	left: 50%;
+	right: 5%;
+	margin-top: 100px;
+	padding: 10px;
 }
 h1 {
+	text-align: right;
+	margin-top: 150px;
+	margin-right: 130px;
+	font-family: "fertigo-pro-1","fertigo-pro-2";
+}
+#results_text {
+	text-align: right;
+	margin-top: 150px;
+	margin-right: 100px;
 	font-family: "fertigo-pro-1","fertigo-pro-2";
 }

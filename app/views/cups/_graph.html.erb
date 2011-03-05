@@ -5,7 +5,7 @@
 /* Sizing and scales. */
 var w = 400,
     h = 250,
-    x = pv.Scale.linear(0, 20).range(0, w),
+    x = pv.Scale.linear(0, 5).range(0, w),
     y = pv.Scale.ordinal(pv.range(3)).splitBanded(0, h, 4/5),
     labels = ["National Average", "Your Cups", "User Average"];
 
@@ -28,7 +28,7 @@ var bar = vis.add(pv.Bar)
 
 /* The value label. */
 bar.anchor("right").add(pv.Label)
-    .textStyle("white")
+    .textStyle("black")
     .text(function(d) d.toFixed(1));
 
 /* The variable label. */
@@ -36,18 +36,16 @@ bar.anchor("left").add(pv.Label)
     .textMargin(5)
     .textAlign("right")
     .text(function() labels[this.index]);
-
+    
 /* X-axis ticks. */
 vis.add(pv.Rule)
-    .data(x.ticks(5))
+    .data(x.ticks(0))
     .left(x)
-    .strokeStyle(function(d) d ? "rgba(255,255,255,.3)" : "#000")
+    .strokeStyle(function(d) d ? "black" : "#000")
   .add(pv.Rule)
     .bottom(0)
     .height(5)
     .strokeStyle("#000")
-  .anchor("bottom").add(pv.Label)
-    .text(x.tickFormat);
 
 vis.render();
 
